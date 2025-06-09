@@ -47,8 +47,8 @@ os.chdir('C:/Users/Administrator/Desktop/amber/NLP/project')
 
 
 #%%time
-name = 'Alibaba Group Holding Ltd'#input1 for the edgar package
-CIK = '0001577552'#input2 for the edgar package
+name = 'Voyager Technologies, Inc.'#input1 for the edgar package
+CIK = '0001788060'#input2 for the edgar package
 company = Company(name, CIK)
 link = company.get_filings_url(filing_type = '424B4') #get the url for 424B4 (i.e. IPO prospectus) filing catalogue page
 filename = name.replace(' ','_')
